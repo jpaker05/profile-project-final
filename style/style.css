@@ -1,12 +1,13 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --branding-color: #9c646f;
+  --secondary-color: #ddd9d5;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
+  background: #dac4c6;
 }
 
 h1,
@@ -15,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: black;
+  color: #0e100d;
   font-family: var(--heading-font-family);
   font-weight: bold;
 }
