@@ -1,17 +1,17 @@
 :root {
   --branding-color: #9c646f;
   --secondary-color: #ddd9d5;
+  --main-color: #dac4c6;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
-  background: #dac4c6;
+  background: var(--main-color);
 }
 
 h1,
-h2,
 h3,
 h4,
 h5,
@@ -27,6 +27,9 @@ h1 {
 }
 
 h2 {
+  color: var(--branding-color);
+  font-family: var(--heading-font-family);
+  font-weight: bold;
   font-size: 64px;
 }
 
@@ -38,6 +41,10 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+}
+
+.hello {
+  color: var(--branding-color);
 }
 
 .hero {
@@ -94,6 +101,12 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 12px;
+  transition: all 100ms ease-in-out;
+}
+
+.btn-branding:hover {
+  background: var(--main-color);
+  border: 1px solid var(--branding-color);
 }
 
 .btn-branding-outline {
@@ -103,10 +116,28 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 12px;
+  transition: all 100ms ease-in-out;
+}
+
+.btn-branding-outline:hover {
+  color: var(--main-color);
+  background: var(--branding-color);
 }
 
 .project-description {
   padding: 120px 60px;
+}
+
+.project-links {
+  color: #0e100d;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+}
+
+.project-links:hover {
+  color: var(--branding-color);
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .header-name {
@@ -138,6 +169,13 @@ nav a {
 nav a:hover,
 nav li.active a {
   color: var(--branding-color);
+}
+
+img {
+  border: 2px solid var(--branding-color);
+  border-radius: 5px;
+  padding: 20px;
+  background-color: var(--secondary-color);
 }
 
 footer {
